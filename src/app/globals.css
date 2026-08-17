@@ -3,3 +3,13 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
 }
+
+@layer base {
+  /* Set on body rather than per-layout. Pages outside a route group — the
+     unauthorized and not-found pages — have no layout of their own, so
+     without this their dark-mode text colour renders against the browser's
+     default white and becomes unreadable. */
+  body {
+    @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
+  }
+}
