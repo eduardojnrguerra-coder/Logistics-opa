@@ -6,6 +6,7 @@ import type { Permission } from "@/lib/auth/roles";
 // the server/client boundary — Sidebar maps the id back to a lucide icon.
 export type NavIcon =
   | "dashboard"
+  | "tracking"
   | "jobs"
   | "vehicles"
   | "drivers"
@@ -28,6 +29,7 @@ export type NavItem = {
 // policies would refuse to populate.
 export const NAV_ITEMS: NavItem[] = [
   { name: "Dashboard", href: "/", icon: "dashboard" },
+  { name: "Live tracking", href: "/tracking", icon: "tracking" },
   { name: "Jobs", href: "/jobs", icon: "jobs" },
   { name: "Vehicles", href: "/vehicles", icon: "vehicles" },
   { name: "Drivers", href: "/drivers", icon: "drivers" },

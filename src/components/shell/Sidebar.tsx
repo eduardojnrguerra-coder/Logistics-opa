@@ -11,6 +11,7 @@ import {
   LayoutDashboard,
   Menu,
   Package,
+  Radar,
   Settings,
   Truck,
   Users,
@@ -21,6 +22,7 @@ import type { NavIcon, NavItem } from "@/components/shell/nav";
 
 const ICONS: Record<NavIcon, typeof LayoutDashboard> = {
   dashboard: LayoutDashboard,
+  tracking: Radar,
   jobs: Package,
   vehicles: Truck,
   drivers: Users,
